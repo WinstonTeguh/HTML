@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="border">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><border>About Me</border></title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            h1 {
+                color: black;
+            }
+
+            .subtitle {
+                font-style: italic;
+                color: grey;
+            }
+
+            code {
+                font-family: monospace;
+                font-size: larger;
+            }
+
+            blockquote {
+                display: block;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            del {
+                text-decoration: line-through;
+            }
+        
+            q.customized:before {
+                content: "~ ";
+            }
+
+            q.customized:after {
+                content: "~ ";
+            }
+
+            h1:before {
+                content: ' \005B';
+            }
+
+            h1:after {
+                content: ' \005D';
+            }
+        </style>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="myeducation.html">My Education</a></li>
+                <li><a href="myfamily.html">My Family</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>About Me</h1>
+            <p class="subtitle">Learn more about my journey</p>
+        </header>
+        <section class="about">
+            <img src="img/profile.png" alt="Profile Picture" class="profile-pic">
+            <p class="description" style="font-size: 18px;">
+                I am passionate web developer with a love for creating elegant and efficient web solution
+            </p>
+            <div>
+            <p>
+                <code>
+                    <blockquote>
+                        <strong>
+                            <mark style="background-color:white;">
+                                <q class="description">
+                                    I can do coding
+                                </q>
+                                </mark>
+                        </strong>
+                    </blockquote>
+                </code>
+            </p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
