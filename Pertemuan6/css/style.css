@@ -1,0 +1,130 @@
+body{
+    background: #35A9DB;
+    font-family: roboto;
+    text-align: center;
+    color: #fff;
+}
+ 
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+}
+ 
+ 
+@font-face {
+        font-family: tulisan_keren;
+        src: url(BlackHistory.otf);
+}
+ 
+.font-khusus{
+    font-family: 'tulisan_keren';
+    font-size: 70pt;
+    font-variant: inherit;
+}
+
+@font-face {
+        font-family: tulisan_keren1;
+        src: url(../Westfalen.otf)
+}
+.font-khusus1{
+    font-family: 'tulisan_keren1';
+    font-size: 70pt;
+    font-variant: inherit;
+}
+@font-face {
+    font-family: tulisan_keren2;
+    src: url(../Midnight.otf);
+}
+
+.font-khusus2{
+font-family: 'tulisan_keren2';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_keren3;
+    src: url(../Teacher.otf)
+}
+
+.font-khusus3{
+font-family: 'tulisan_keren3';
+font-size: 70pt;
+font-variant: inherit;
+}
+@font-face {
+    font-family: tulisan_keren4;
+    src: url(../LoveMoment.otf);
+}
+
+.font-khusus4{
+font-family: 'tulisan_keren4';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_keren5;
+    src: url(../Glittering.otf)
+}
+
+.font-khusus5{
+font-family: 'tulisan_keren5';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+font-family: tulisan_keren6;
+src: url(../Another.otf);
+}
+
+.font-khusus6{
+font-family: 'tulisan_keren6';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+font-family: tulisan_keren7;
+src: url(../Autography.otf)
+}
+
+.font-khusus7{
+font-family: 'tulisan_keren7';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_keren8;
+    src: url(../Klomang.otf);
+}
+
+.font-khusus8{
+    font-family: 'tulisan_keren8';
+    font-size: 70pt;
+    font-variant: inherit;
+    }
+
+@font-face {
+    font-family: tulisan_keren9;
+    src: url(../Loogs.otf);
+}
+    
+.font-khusus9{
+    font-family: 'tulisan_keren9';
+    font-size: 70pt;
+    font-variant: inherit;
+}
+    
+@font-face {
+    font-family: tulisan_keren10;
+    src: url(../Zasque.otf)
+}
+
+.font-khusus10{
+    font-family: 'tulisan_keren10';
+    font-size: 70pt;
+    font-variant: inherit;
+}
