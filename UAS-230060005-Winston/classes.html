@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers | My Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .classes-section {
+            padding: 40px;
+            background-color: #e9ecef;
+        }
+
+        .classes-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .classes-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">My FITNESS</a></h1>
+            <nav>
+                <ul>
+                    <li><b><a href="index.html">Home</a></b></li>
+                    <li><b><a href="classes.html">Classes</a></b></li>
+                    <li><b><a href="about.html">About</a></b></li>
+                    <li><b><a href="contact.html">Contact</a></b></li>
+                    <li><b><a href="trainer.html">Trainers</a></b></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="classes-section">
+        <div class="classes-content">
+            <h2>Our Available Classes</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="img/pilates.jpeg" alt="Project 1">
+                    <h3>Pilates Class</h3>
+                    <p>Our Pilates class to strengthen your core, improve flexibility, and enhance overall body awareness.</p>
+                </div>
+                <div class="project">
+                    <img src="img/strentrain.jpg" alt="Project 2">
+                    <h3>Strenght Training Class</h3>
+                    <p>Using a variety of weights and resistance exercises in our class, you'll enhance your endurance, power, and overall fitness.</p>
+                </div>
+                <div class="project">
+                    <img src="img/yoga.jpg" alt="Project 3">
+                    <h3>Yoga Class</h3>
+                    <p>Experience balance and tranquility in our yoga class. Through a blend of postures, breathing exercises, and mindfulness, you'll enhance flexibility, strength, and mental clarity.</p>
+                </div>
+                <div class="project">
+                    <img src="img/zumba.jpg" alt="Project 4">
+                    <h3>Zumba Class</h3>
+                    <p>Get ready to dance your way to fitness in our high-energy Zumba class! With vibrant music and easy-to-follow steps, you'll burn calories, improve coordination, and have a blast.</p>
+                </div>
+                <div class="project">
+                    <img src="img/dance.jpg" alt="Project 5">
+                    <h3>Dancing Class</h3>
+                    <p>Ignite your passion for movement in our gym dance class! Whether you're a beginner or seasoned dancer, you'll enjoy a mix of rhythmic exercises and choreography set to upbeat music.</p>
+                </div>
+                <div class="project">
+                    <img src="img/cardio.jpg" alt="Project 6">
+                    <h3>Cardio Class</h3>
+                    <p>Elevate your heart rate and boost your endurance in our cardio class! This high-energy workout combines various aerobic exercises to improve cardiovascular health, burn calories, and increase stamina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My FITNESS. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

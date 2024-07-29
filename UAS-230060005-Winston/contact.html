@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Sample CSS styling for contact page */
+        .contact-section {
+            padding: 40px;
+            background-color: #e9ecef;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-content label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .contact-content input,
+        .contact-content textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .contact-content button {
+            padding: 10px 20px;
+            background-color: grey;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-content button:hover {
+            background-color: #555;
+        }
+
+        .contact1-section {
+            padding: 40px;
+            background-color: #e9ecef;
+        }
+
+        .contact1-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: #fff;
+            margin-left: 400px;
+            margin-right: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h3 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .section p {
+            line-height: 1.6;
+            font-size: 20px;
+            margin-left: 80px;
+            text-align: left;
+            color: #666;
+        }
+        
+        .profile-pic {
+            margin-left: 350px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">My FITNESS</a></h1>
+            <nav>
+                <ul>
+                    <li><b><a href="index.html">Home</a></b></li>
+                    <li><b><a href="classes.html">Classes</a></b></li>
+                    <li><b><a href="about.html">About</a></b></li>
+                    <li><b><a href="contact.html">Contact</a></b></li>
+                    <li><b><a href="trainer.html">Trainers</a></b></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <form action="contact_form_handler.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact1-section">
+        <div class="contact1-content">
+            
+            <div class="section mission">
+                <h3>Our Contact</h3>
+                <img src="img/phone.webp" class ="profile-pic">
+                <img src="img/loc.png" class ="profile-pic">
+                <h3><b>Telp : +62 012345678</b></h3><h3><b>Addres: jl lol 12</b></h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My FITNESS. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
