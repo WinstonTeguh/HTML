@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers | My Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function handleExploreMoreClick() {
+            window.location.href = 'trainer.html';
+        }
+    </script>
+    <style>
+        .classes-section {
+            padding: 40px;
+            background-color: #e9ecef;
+        }
+
+        .classes-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .classes-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .home-section {
+            height: 100vh;
+            background: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">My FITNESS</a></h1>
+            <nav>
+                <ul>
+                    <li><b><a href="index.html">Home</a></b></li>
+                    <li><b><a href="classes.html">Classes</a></b></li>
+                    <li><b><a href="about.html">About</a></b></li>
+                    <li><b><a href="history.html">History</a></b></li>
+                    <li><b><a href="contact.html">Contact</a></b></li>
+                    <li><b><a href="trainer.html">Trainers</a></b></li>
+                    <li><b><a href="schedule.html">Schedule</a></b></li>
+                    <li><b><a href="subscription.html">Subscription</a></b></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="classes-section">
+        <div class="classes-content">
+        <h2>Schedule</h2>
+
+        <table>
+        <tr>
+            <th>Time</th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td>08:00 - 10:00</td>
+            <td>Bro 1</td>
+            <td>Bro 2</td>
+            <td>Bro 3</td>
+            <td>Bro 3</td>
+            <td></td>
+            <td>Bro 2</td>
+            <td>Bro 1</td>
+        </tr>
+        <tr>
+            <td>10:00 - 12:00</td>
+            <td></td>
+            <td>Bro 3</td>
+            <td>Bro 2</td>
+            <td>Bro 1</td>
+            <td>Bro 2</td>
+            <td></td>
+            <td>Bro 1</td>
+        </tr>
+        <tr>
+            <td>13:00 - 15:00</td>
+            <td>Bro 2</td>
+            <td>Bro 3</td>
+            <td></td>
+            <td>Bro 1</td>
+            <td></td>
+            <td>Bro 2</td>
+            <td>Bro 3</td>
+        </tr>
+        <tr>
+            <td>15:00 - 17:00</td>
+            <td>Bro 1</td>
+            <td></td>
+            <td>Bro 1</td>
+            <td>Bro 2</td>
+            <td>Bro 3</td>
+            <td>Bro 2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>18:00 - 20:00</td>
+            <td>Bro 3</td>
+            <td>Bro 1</td>
+            <td></td>
+            <td>Bro 2</td>
+            <td>Bro 3</td>
+            <td></td>
+            <td>Bro 1</td>
+        </tr>
+        <tr>
+            <td>20:00 - 22:00</td>
+            <td></td>
+            <td>Bro 2</td>
+            <td>Bro 1</td>
+            <td>Bro 3</td>
+            <td></td>
+            <td></td>
+            <td>Bro 3</td>
+        </tr>
+        </table>
+        </div>
+    </section>
+
+    <section class="home-section">
+        <div class="container">
+            <h1>Check Out Our Trainer</h1>
+            <p>Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come..</p>
+            <a href="javascript:void(0);" onclick="handleExploreMoreClick()" class="btn">Check it out</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My FITNESS. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+

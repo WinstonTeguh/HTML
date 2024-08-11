@@ -17,12 +17,33 @@
             height: 100vh; 
             background-color: #f0f0f0; 
             font-family: Arial, sans-serif; 
+        }
+
+        .classes-section {
+            padding: 40px;
+            background-color: #f0f0f0;
+        }
+
+        .classes-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .classes-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
         } 
   
     </style> 
 </head> 
   
-<body> 
+<body>
+    <section class="classes-section">
+        <div class="classes-content"> 
         <div class="popup-box"> 
             <h2 style="color: black;">Sign Up</h2> 
             <form class="form-container"> 
@@ -67,8 +88,9 @@
               Close 
             </button> 
             </a>
+        </div>
         </div> 
-    </div> 
+    </section> 
   
     <script> 
         function togglePopup() { 

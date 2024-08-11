@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | My Fitness</title>
+    <title>Home | My Fitness</title>
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+        function handleExploreMoreClick() {
+            window.location.href = 'signup.html';
+        }
+        function handleExploreMoreClick1() {
+            window.location.href = 'signin.html';
+        }
+
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        // Initialize slideshow
+        document.addEventListener("DOMContentLoaded", function() {
+            showSlides();
+        });
+    </script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -16,22 +44,70 @@
                     <li><b><a href="index.html">Home</a></b></li>
                     <li><b><a href="classes.html">Classes</a></b></li>
                     <li><b><a href="about.html">About</a></b></li>
+                    <li><b><a href="history.html">History</a></b></li>
                     <li><b><a href="contact.html">Contact</a></b></li>
                     <li><b><a href="trainer.html">Trainers</a></b></li>
+                    <li><b><a href="schedule.html">Schedule</a></b></li>
+                    <li><b><a href="subscription.html">Subscription</a></b></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2 style="font-size: 60px;">About Us</h2>
-            <img src="img/about.jpg" style="width:100%">
-            <p style="font-size: 40px;"><b>Discover our story and mission to promote health and fitness.</b></p>
-            <p style="font-size: 30px;"> Some may call it a tagline, but for us, it's a way of life.</p>
-            <p style="font-size: 30px;"> It's our Monday-thru-every-day mantra. An unfiltered philosophy</p>
-            <p style="font-size: 30px;"> that drives us to create a community and a gym for all.</p> 
+
+
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="img/home1.jpg" alt="Slide 1">
+                <div class="text">Slide 1 Description</div>
+            </div>
+            <div class="slide fade">
+                <img src="img/home2.jpg" alt="Slide 2">
+                <div class="text">Slide 2 Description</div>
+            </div>
+            <div class="slide fade">
+                <img src="img/home3.jpg" alt="Slide 3">
+                <div class="text">Slide 3 Description</div>
+            </div>
+            <!-- Add more slides as needed -->
         </div>
+
+        <div class="w3-container">
+
+            <h2><b>Why choose us ?</b></h2>
+              
+            <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">State of the Art Facilities</button>
+            <div id="Demo1" class="w3-container w3-hide">
+              <h4>Our gym is equipped with the latest fitness technology and a wide range of equipment to cater to all your workout needs. Whether you're into cardio, strength training, or functional fitness, we've got you covered.</h4>
+            </div>
+
+            <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Expert Trainers</button>
+            <div id="Demo2" class="w3-container w3-hide">
+              <h4>Our certified trainers are here to guide you every step of the way. With personalized workout plans and expert advice, they help you achieve your fitness goals faster and more effectively.</h4>
+            </div>
+
+            <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-left-align">Variety of Classes</button>
+            <div id="Demo3" class="w3-container w3-hide">
+              <h4>From high-intensity interval training (HIIT) to relaxing yoga, our diverse class offerings ensure there's something for everyone. No matter your fitness level or interest, you'll find a class that fits your schedule and goals.</h4>
+            </div>
+
+            <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-black w3-left-align">Clean & Safe Environment</button>
+            <div id="Demo4" class="w3-container w3-hide">
+              <h4>Your health and safety are our top priorities. Our gym is meticulously cleaned and sanitized, with strict hygiene protocols in place to ensure a safe workout environment for all members.</h4>
+            </div>
+        </div>
+
+        <script>
+            function myFunction(id) {
+              var x = document.getElementById(id);
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+        </script>
     </section>
 
     <footer>

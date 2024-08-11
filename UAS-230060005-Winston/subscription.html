@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Subscription | My Fitness</title>
+    <script>
+        function handleExploreMoreClick() {
+            window.location.href = 'payment.html';
+        }
+    </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .containercard{
+            width: 1100px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+        }
+
+        .containercard .card{
+            width: 300px;
+            height: auto;
+            padding: 10px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #ee20d6 0%, #0a2fb6 100%);
+            border-radius: 15px;
+            box-shadow: 2px 5px 15px black;
+            transition: transform 0.3s;
+        }
+
+        .containercard .card:hover{
+            transform: scale(1.050);
+        }
+
+        .containercard .card .card-title{
+            padding: 30px 20px;
+            border-bottom: 2px solid gray;
+        }
+
+        .containercard .card .card-title h2{
+            font-size: 35px;
+            padding-bottom: 15px;
+            color: yellow;
+        }       
+
+        .containercard .card .card-title p span{
+            font-size: 40px;
+            padding: 0 5px;
+        }
+
+        .containercard .card .card-content ul{
+            padding: 10px 30px;
+            padding-bottom: 20px;
+        }
+
+        .containercard .card .card-content ul li{
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .containercard .card .card-content ul li i{
+            margin-right: 4px;
+        }
+
+        .containercard .card .card-content button{
+            width: 120px;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .containercard .card .card-content button:hover{
+            background: #17ead9;
+            letter-spacing: 1.2px;
+        }
+
+        .containercard .card .card-content button a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">My FITNESS</a></h1>
+            <nav>
+                <ul>
+                    <li><b><a href="index.html">Home</a></b></li>
+                    <li><b><a href="classes.html">Classes</a></b></li>
+                    <li><b><a href="about.html">About</a></b></li>
+                    <li><b><a href="history.html">History</a></b></li>
+                    <li><b><a href="contact.html">Contact</a></b></li>
+                    <li><b><a href="trainer.html">Trainers</a></b></li>
+                    <li><b><a href="schedule.html">Schedule</a></b></li>
+                    <li><b><a href="subscription.html">Subscription</a></b></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <div class="containercard">
+       <div class="card">
+           <div class="card-title">
+               <h2>1 Week</h2>
+               <p><i class="fa fa-dollar"></i><Span>99</Span>/week</p>
+           </div>
+           <div class="card-content">
+               <ul>
+                   <li><i class="fa fa-check-circle"></i>Free Trial Period</li>
+                   <li><i class="fa fa-check-circle"></i>1 Day Trial Trainer</li>
+                   <li><i class="fa fa-check-circle"></i>24/7 Support</li>
+                   <li><i class="fa fa-times-circle"></i>Discounted Monthly Rates</li>
+                   <li><i class="fa fa-times-circle"></i>Access to Multiple Locations</li>
+                   <li><i class="fa fa-times-circle"></i>Referral Bonuses</li>
+               </ul>
+               <button><a href="javascript:void(0);" onclick="handleExploreMoreClick()">Buy Now</a></button>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-title">
+               <h2>1 Month</h2>
+               <p><i class="fa fa-dollar"></i><Span>199</Span>/month</p>
+           </div>
+           <div class="card-content">
+               <ul>
+                <li><i class="fa fa-check-circle"></i>Free Trial Period</li>
+                <li><i class="fa fa-check-circle"></i>1 Day Trial Trainer</li>
+                <li><i class="fa fa-check-circle"></i>24/7 Support</li>
+                <li><i class="fa fa-check-circle"></i>Discounted Monthly Rates</li>
+                <li><i class="fa fa-check-circle"></i>Access to Multiple Locations</li>
+                <li><i class="fa fa-times-circle"></i>24/7 Support</li>
+               </ul>
+               <button><a href="javascript:void(0);" onclick="handleExploreMoreClick()">Buy Now</a></button>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-title">
+               <h2>1 Year</h2>
+               <p><i class="fa fa-dollar"></i><Span>299</Span>/year</p>
+           </div>
+           <div class="card-content">
+               <ul>
+                <li><i class="fa fa-check-circle"></i>Free Trial Period</li>
+                <li><i class="fa fa-check-circle"></i>1 Day Trial Trainer</li>
+                <li><i class="fa fa-check-circle"></i>24/7 Support</li>
+                <li><i class="fa fa-check-circle"></i>Discounted Monthly Rates</li>
+                <li><i class="fa fa-check-circle"></i>Access to Multiple Locations</li>
+                <li><i class="fa fa-check-circle"></i>24/7 Support</li>
+               </ul>
+               <button><a href="javascript:void(0);" onclick="handleExploreMoreClick()">Buy Now</a></button>
+           </div>
+       </div>
+   </div>
+   
+   <footer>
+    <div class="container">
+        <p>&copy; 2024 My FITNESS. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

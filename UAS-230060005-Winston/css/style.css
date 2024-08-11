@@ -1,181 +1,298 @@
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: white;
-    }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('about.jpg');
+    background-size: cover; /* Ensures the image covers the whole element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
 
-    header, footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 1em 0;
-    }
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
 
-    .container {
-        background: url(showcase.jpg) no-repeat center center/cover;
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-    }
+/* Hide images by default */
+.slide {
+    display: none;
+}
 
-    header {
-        background: #333;
-        color: #fff;
-        padding: 15px 0;
-    }
+/* Slideshow image */
+.slide img {
+    width: 100%;
+    height: auto;
+}
 
-    header .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+/* Slide text */
+.text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #f2f2f2;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
 
-    header h1 a {
-        color: #fff;
-        text-decoration: none;
-    }
+/* Add default transition effects */
+.fade {
+    animation: fade 2s ease-in-out;
+}
 
-    header nav ul {
-        list-style: none;
-        display: flex;
-    }
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
 
-    header nav ul li {
-        margin-left: 20px;
-    }
+/* Navigation dots (optional) */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 
-    header nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
+.active {
+    background-color: #717171;
+}
+
+@media (max-width: 768px) {
+    .text {
         font-size: 16px;
+        padding: 8px;
     }
+}
 
-    section {
-        padding: 60px 0;
-        background: white;
+@media (max-width: 480px) {
+    .text {
+        font-size: 14px;
+        padding: 6px;
     }
+}
 
-    section h2 {
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.container {
+    background: url(showcase.jpg) no-repeat center center/cover;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+section {
+    padding: 60px 0;
+    background: white;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.about-section {
+    background: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.about-section ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.about-section ul li {
+    margin: 0 20px;
+}
+
+.about-section ul li span {
+    display: block;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section ul li p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #666;
+}
+
+.home-section {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #fff;
+}
+
+.home-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.home-section .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: grey;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-section .btn:hover {
+    background-color: #e55d00;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
         text-align: center;
-        margin-bottom: 30px;
     }
 
-    section p {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    ul {
-        list-style-type: none;
-    }
-
-    footer {
-        text-align: center;
-        background: #333;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-    }
-    .about-section {
-        background: white;
-        padding: 80px 0;
-        text-align: center;
-    }
-
-    .about-section p {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-        line-height: 1.8;
-    }
-
-    .about-section ul {
-        list-style-type: none;
+    nav ul {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         padding: 0;
     }
 
-    .about-section ul li {
-        margin: 0 20px;
-    }
-
-    .about-section ul li span {
+    nav ul li {
         display: block;
-        font-size: 2rem;
-        color: #333;
-        margin-bottom: 10px;
-    }
-
-    .about-section ul li p {
-        font-size: 1.1rem;
-        text-align: center;
-        color: #666;
+        margin: 5px 0;
     }
 
     .home-section {
-        height: 100vh;
-        background: linear-gradient(135deg, #ff6700 0%, #f8f9fa 100%);
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        text-align: left; 
-        color: #fff;
-    }
-
-    .home-section h1 {
-        font-size: 4rem;
-        margin-bottom: 20px;
-    }
-
-    .home-section p {
-        text-align: left;
-        font-size: 1.5rem;
-        margin-bottom: 30px;
+        padding: 10px;
     }
 
     .home-section .btn {
-        display: inline-block;
-        margin-top: 100px;
-        padding: 12px 24px;
-        background-color: grey;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
-
-    .home-section .btn:hover {
-        background-color: #e55d00;
-    }
-
-    form label {
         display: block;
-        margin-top: 1em;
+        width: calc(100% - 20px);
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 a {
+        font-size: 1.5rem;
     }
 
-    form input, form select, form textarea {
-        width: 100%;
-        padding: 0.5em;
-        margin-top: 0.5em;
+    .home-section h1 {
+        font-size: 1.5rem;
     }
 
-    form input[type="submit"] {
-        width: auto;
-        background: #333;
-        color: #fff;
-        border: none;
-        padding: 0.7em 1.5em;
-        cursor: pointer;
+    .home-section p {
+        font-size: 0.875rem;
     }
-
-    form input[type="submit"]:hover {
-        background: #555;
-    }
+}
